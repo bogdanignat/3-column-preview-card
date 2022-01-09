@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&display=swap');
 
+/*variables*/
 :root {
   --brightOrange: hsl(31, 77%, 52%);
   --darkCyan: hsl(184, 100%, 22%);
@@ -8,6 +9,8 @@
   ---paragraphs: hsla(0, 0%, 100%, 0.75);
   --background: hsl(0, 0%, 95%);
 }
+
+/*style for document*/
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +24,8 @@ body {
   font-weight: 400;
 }
 
-.container.main-div {
+/*the main container*/
+.main-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,11 +35,7 @@ body {
   margin: auto;
 }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
+/*columns for cards*/
 #column1 {
   background: var(--brightOrange);
   padding: 2rem;
@@ -64,6 +64,7 @@ body {
   align-content: space-around;
 }
 
+/*borders for left and right of the cards*/
 .border_left {
   border-radius: 0.5rem 0 0 0.5rem;
 }
@@ -88,6 +89,7 @@ p {
   color: var(---paragraphs);
 }
 
+/*buttons display*/
 button {
   margin: 5% 0 5% 0;
   border-radius: 20px;
@@ -96,43 +98,45 @@ button {
   font-weight: 700;
 }
 
+/*buttons color and background*/
 #button1 {
   background-color: var(--background);
   color: var(--brightOrange);
 }
-#button1:hover {
-  color: var(--background);
-  background-color: var(--brightOrange);
-}
-
 #button2 {
   background-color: var(--background);
   color: var(--darkCyan);
 }
-#button2:hover {
-  color: var(--background);
-  background-color: var(--darkCyan);
-}
-
 #button3 {
   background-color: var(--background);
   color: var(--veryDarkCyan);
+}
+
+/* buttons hover efect */
+#button1:hover {
+  color: var(--background);
+  background-color: var(--brightOrange);
+}
+#button2:hover {
+  color: var(--background);
+  background-color: var(--darkCyan);
 }
 #button3:hover {
   color: var(--background);
   background-color: var(--veryDarkCyan);
 }
 
+/*footer*/
 .attribution {
   font-size: 12px;
   text-align: center;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 480px) {
+/* transform borders to top and bottom */
+@media (max-width: 769px) {
   .border_left {
     border-radius: 0.5rem 0.5rem 0 0;
   }
